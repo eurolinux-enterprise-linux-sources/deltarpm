@@ -7,7 +7,7 @@
 Summary: Create deltas between rpms
 Name: deltarpm
 Version: 3.6
-Release: 1%{?dist}
+Release: 3%{?dist}
 License: BSD
 Group: System Environment/Base
 URL: http://gitorious.org/deltarpm/deltarpm
@@ -134,6 +134,12 @@ rm -rf %{buildroot}%{_libdir}/python3*
 %endif
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.6-3
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.6-2
+- Mass rebuild 2013-12-27
+
 * Thu Jun 20 2013 Jonathan Dieter <jdieter@lesbg.com> - 3.6-1
 - Update to 3.6 which, among other things, fixes a bug when applying a deltarpm
   to create a gzip-compressed rpm using full compression
